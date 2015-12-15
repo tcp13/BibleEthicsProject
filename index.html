@@ -1,1 +1,319 @@
-//html
+<!--
+photos from unsplash.com
+used with permission under Creative Commons License 0
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Bible Ethics Project</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,700,700italic,600italic,600' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>          
+    
+    <body>
+    <!--<div class="hidden-xs hidden-sm">-->
+        
+        <div id="bgHome"></div>
+        
+        <div id="bgBible"></div>
+        
+        <div id="bgBible2"></div>
+        
+        <div id="bgOthers"></div>
+        
+        <div id="bgGospel"></div>
+        
+        <div id="bgWise"></div>
+        
+        <div class="container" id="header">
+            <div id="row">
+                <div class="col-xs-12">
+                    <h1 id="title">The Bible Ethics Project</h1>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        <div class="container" id="homeContent">
+            <div id="row">
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+
+                <div class="col-lg-4" id="content">
+                    <p>Enter a controversial topic in the search bar to begin!</p>
+                    <br>
+                    <br>
+                    <form action="javascript:setTopic();">
+                        <input type="text" id="topicIn" name="topicIn" autocomplete="off">
+                        <input type="submit" value="Go!">
+                    </form>
+                    <br>
+                    <br>
+                    <p>Or start by clicking on one of these examples!</p>
+                    <br>
+                    <br>
+                    <form action="javascript:setTopic1();">
+                        <input type="submit" value="Abortion">
+                    </form>
+                    <br>
+                    <form action="javascript:setTopic2();">
+                        <input type="submit" value="Homosexuality">
+                    </form>
+                    <br>
+                    <form action="javascript:setTopic3();">
+                        <input type="submit" value="Marriage">
+                    </form>
+                </div>
+                
+                <div class="col-lg-2">
+                    <!--space-->
+                </div>
+                
+                <div class="col-lg-4" id="content">
+                    <p>Welcome to the Bible Ethics Project, created by Tyler Puckett for his Honors Bible assignment. Simply enter a controversial topic into the search bar to the left,
+                    and use online resources to view your topic through a Godly worldview.</p>
+                    <br>
+                    <p>This website was created from scratch using the programming languages HTML, CSS, and JavaScript with the jQuery library and Bootstrap framework. Click <a href="https://github.com/tcp13/BibleEthicsProject" target="_blank">here</a>
+                    to see the over 700 lines of source files and custom scripts I wrote for this site.</p>
+                </div>
+                
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+            </div>
+        </div>
+        
+        <div class="container" id="bibleContent">
+            <div id="row">
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+
+                <div class="col-lg-4" id="content">
+                    <p>&quot;All Scripture is God-breathed and is useful for teaching, rebuking, correcting and training in righteousness,
+                    so that the servant of God may be thoroughly equipped for every good work.&quot;</p> <p>(2 Timothy 3:16-17)</p>
+                    <br>
+                    <p>When researching the ethics of a topic, the best place to start is the Bible - God's source of absolute truth. The links to the right will automatically search online Bible resources for specific mentions of &quot;<span class="topic">your topic</span>&quot;. Make sure to read the surrounding verses of your results, so that they are not taken out of context!</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <!--space-->
+                </div>
+                
+                <div class="col-lg-4" id="content">
+                    <p><a href="http://www.bibleethics.tk" target="_blank" id="gatewayLink">Bible Gateway</a> searches the NIV Bible for specific mentions of <span class="topic">your topic</span>.</p>
+                    <br>
+                    <p><a href="http://www.bibleethics.tk" target="_blank" id="esvLink">ESV Online</a> searches the ESV Study Bible for specific mentions of <span class="topic">your topic</span> along with footnotes, historical context, and other useful information to help you understand Scripture.</p>
+                    <br>
+                    <p><a href="http://www.bibleethics.tk" target="_blank" id="allLink">Bible Study Tools</a> searches a database with hundreds of versions and translations for any mention of <span class="topic">your topic</span>.</p>
+                    <br>
+                    <form action="javascript:toHome();">
+                        <input type="submit" value="Back">
+                    </form>
+                    <br>
+                    <form action="javascript:toBible2();">
+                        <input type="submit" value="Continue">
+                    </form>
+                </div>
+                
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="container" id="bible2Content">
+            <div id="row">
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+
+                <div class="col-lg-4" id="content">
+                    <p>&quot;For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow,
+                    and discerning the thoughts and intentions of the heart.&quot;</p> <p>(Hebrews 4:12)</p>
+                    <br>
+                    <p>After finding literal mentions of <span class="topic">your topic</span>, topical Bibles and other reference sources can be used to find more general Biblical principles that might apply.</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <!--space-->
+                </div>
+                
+                <div class="col-lg-4" id="content">
+                    <p><a href="http://www.bibleethics.tk" target="_blank" id="openbibleLink">Open Bible</a> is a dynamic topical Bible that finds generalized verses and references about <span class="topic">your topic</span>.</p>
+                    <br>
+                    <p><a href="http://www.bibleethics.tk" target="_blank" id="allrefLink">Bible Study Tools</a> uses a database to search for articles and Biblical passages related to <span class="topic">your topic</span>.</p>
+                    <br>
+                    <form action="javascript:toBible();">
+                        <input type="submit" value="Back">
+                    </form>
+                    <br>
+                    <form action="javascript:toOthers();">
+                        <input type="submit" value="Continue">
+                    </form>
+                </div>
+                
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="container" id="othersContent">
+            <div id="row">
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+
+                <div class="col-lg-4" id="content">
+                    <p>&quot;Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, 
+                    what is good and acceptable and perfect.&quot;</p> <p>(Romans 12:2)</p>
+                    <br>
+        			<p>After studying <span class="topic">your topic</span> in the Bible, take a moment to think about other Christians. To the right are some specific questions to consider.</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <!--space-->
+                </div>
+                
+                <div class="col-lg-4" id="content">
+                    <ul class="list-unstyled">
+                        <li>Would <span class="topic">your topic</span> tempt other Christians to sin?</li>
+                        <br>
+                        <li>Would <span class="topic">your topic</span> be offensive to other Christians?</li>
+                        <br>
+                        <li>Would <span class="topic">your topic</span> hinder someone's relationship with Christ?</li>
+                    </ul>
+                    <br>
+                    <form action="javascript:toBible2();">
+                        <input type="submit" value="Back">
+                    </form>
+                    <br>
+                    <form action="javascript:toGospel();">
+                        <input type="submit" value="Continue">
+                    </form>
+                </div>
+                
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="container" id="gospelContent">
+            <div id="row">
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+
+                <div class="col-lg-4" id="content">
+                    <p>&quot;Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, 
+                    what is good and acceptable and perfect.&quot;</p> <p>(Romans 12:2)</p>
+                    <br>
+                    <p>After studying <span class="topic">your topic</span> in the Bible, take a moment to think about other Christians. To the right are some specific questions to consider.</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <!--space-->
+                </div>
+                
+                <div class="col-lg-4" id="content">
+                    <ul class="list-unstyled">
+                        <li>Would <span class="topic">your topic</span> tempt other Christians to sin?</li>
+                        <br>
+                        <li>Would <span class="topic">your topic</span> be offensive to other Christians?</li>
+                        <br>
+                        <li>Would <span class="topic">your topic</span> hinder someone's relationship with Christ?</li>
+                    </ul>
+                    <br>
+                    <form action="javascript:toOthers();">
+                        <input type="submit" value="Back">
+                    </form>
+                    <br>
+                    <form action="javascript:toWise();">
+                        <input type="submit" value="Continue">
+                    </form>
+                </div>
+                
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="container" id="wiseContent">
+            <div id="row">
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+
+                <div class="col-lg-4" id="content">
+                    <p>&quot;Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, 
+                    what is good and acceptable and perfect.&quot;</p> <p>(Romans 12:2)</p>
+                    <br>
+                    <p>After studying <span class="topic">your topic</span> in the Bible, take a moment to think about other Christians. To the right are some specific questions to consider.</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <!--space-->
+                </div>
+                
+                <div class="col-lg-4" id="content">
+                    <ul class="list-unstyled">
+                        <li>Would <span class="topic">your topic</span> tempt other Christians to sin?</li>
+                        <br>
+                        <li>Would <span class="topic">your topic</span> be offensive to other Christians?</li>
+                        <br>
+                        <li>Would <span class="topic">your topic</span> hinder someone's relationship with Christ?</li>
+                    </ul>
+                    <br>
+                    <form action="javascript:toGospel();">
+                        <input type="submit" value="Back">
+                    </form>
+                    <br>
+                    <form action="javascript:toHome();">
+                        <input type="submit" value="Finish">
+                    </form>
+                </div>
+                
+                <div class="col-lg-1">
+                    <!--space-->
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        
+    </div>
+    
+    <!--<div class="visible-xs visible-sm"><p id="mobile">Sorry, but the Bible Ethics Project website is not supported on your device/browser. Please try again using a laptop or desktop for best results!
+    If you are receiving this error message on a desktop or laptop, try adjusting the size of your browser window so that the webpage will format correctly.</p></div>-->
+        
+        
+    </body>
+</html>
